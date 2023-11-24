@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasbeh</title>
+
+  <!-- favicon image -->
+  <link rel="shortcut icon" href="img/tasbih.png" type="image/x-icon">
+  <link rel="icon" href="img/tasbih.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body class="bg-black text-white">
+
+  <div class="w-full max-w-[600px] mx-auto px-5 py-20 md:py-24">
+    <!-- top -->
+    <div class="flex justify-between items-center mb-10">
+      <select id="select" class="p-2 rounded bg-[#333]">
+        <option selected disabled>Zikrni tanlang</option>
+        <option value="Allahu Akbar">Allahu Akbar</option>
+        <option value="Subhanallah">Subhanallah</option>
+        <option value="Alhamdullilah">Alhamdullilah</option>
+      </select>
+
+      <button id="reset" class="bg-green-700 px-5 py-1 rounded">Reset</button>
+    </div>
+
+    <!-- body -->
+    <div class="flex flex-col items-center py-10">
+      <p id="zikr" class="text-lg mb-10 text-center">Iltimos aytmoqchi bo'lgan zikrni tanlang :(</p>
+      <!-- count -->
+      <div class="bg-[#01301c] w-40 h-40 flex justify-center items-center rounded-2xl mb-12">
+        <p id="count" class="text-6xl">0</p>
+      </div>
+      <button id="counter" disabled>
+        <img src="./img/tasbih.png" width="100" alt="Tasbih icon">
+      </button>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
